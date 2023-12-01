@@ -80,6 +80,11 @@
   text-shadow: 2px 2px 6px #4d4d4d;
 }
 
+.textjudulucapan {
+  font-family: judul;
+  color: var(--white-color);
+}
+
 .textacara {
   font-family: angka;
   color: var(--primary-color);
@@ -440,6 +445,21 @@ h2 {
   /* Sesuaikan lebar kotak sesuai kebutuhan */
   padding: 20px;
   background: rgba(255, 255, 255, 0.5);
+  /* Warna latar belakang transparan */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Efek bayangan di bawah kotak */
+  backdrop-filter: blur(5px);
+  /* Efek blur pada kotak */
+  text-align: center;
+}
+
+.blur-boxucapan {
+  width: 100%;
+  height: auto;
+  /* Sesuaikan lebar kotak sesuai kebutuhan */
+  padding: 20px;
+  background: rgba(247, 172, 172, 0.5);
   /* Warna latar belakang transparan */
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
