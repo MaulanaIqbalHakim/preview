@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: rgb(170, 36, 36);
+  --secondary-color: rgb(82, 34, 34);
+  --white-color: rgb(255, 255, 255);
+  --dark-color: #0f0f0f;
+  --grey-color: #727272;
+}
+
+
+.garis{
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid rgb(194, 38, 38); /* 1px untuk ketebalan, solid untuk jenis garis, #000 untuk warna hitam */
+}
+
+.garisgaleri{
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid rgb(194, 38, 38); /* 1px untuk ketebalan, solid untuk jenis garis, #000 untuk warna hitam */
+}
+
+/* fontface */
+@font-face {
+  font-family: 'latin';
+  src: url(./font/Winter\ Sunday.otf);
+}
+
+@font-face {
+  font-family: 'standart';
+  src: url(./font/AvenirLTProBook.otf);
+}
+
+@font-face {
+  font-family: 'judul';
+  src: url(./font/histeagin.ttf);
+}
+
+@font-face {
+  font-family: 'angka';
+  src: url(./font/Saudagar.ttf);
+}
+
+.textstandartayat {
+  font-family: standart;
+  color: var(--primary-color);
+}
+
+.textstandart {
+  font-family: standart;
+  color: var(--white-color);
+}
+
+.textjudul {
+  font-family: judul;
+  color: var(--white-color);
+}
+
+.textjudulctd {
+  font-family: judul;
+  color: var(--primary-color);
+}
+
+.textangka {
+  font-family: angka;
+  color: var(--white-color);
+}
+
+.textjudulacara {
+  font-family: judul;
+  color: var(--white-color);
+  text-shadow: 2px 2px 6px #4d4d4d;
+}
+
+.textacara {
+  font-family: angka;
+  color: var(--primary-color);
+}
+
+/* modal */
+.covermodal {
+  background: rgba(0, 0, 0, 0.575) url('./img/2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.contentmodal h6 {
+  font-family: latin;
+}
+
+.contentmodal h5 {
+  font-family: judul;
+}
+
+.contentmodal p {
+  font-family: angka;
+}
+
+.tombolbukamodal {
+  background-color: maroon;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: standart;
+  font-size: 15px;
+}
+
+.tombolbukamodal:hover {
+  background-color: white;
+  color: maroon;
+}
+
+.tombolbukamodal:active {
+  background-color: maroon;
+  color: white;
+}
+
+
+/* cover */
+.cover {
+  background: rgba(0, 0, 0, 0.575) url('./img/coverr.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  text-align: center;
+  font-family: 'judul';
+  box-sizing: border-box;
+}
+
+.invitation-text {
+  margin: 20px;
+  font-size: 24px;
+}
+
+hr {
+  width: 70%;
+  border: none;
+  border-top: 2px solid white;
+  /* Ganti dengan warna yang diinginkan */
+  margin: 0 auto;
+}
+
+.line-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.line-wrapper hr {
+  flex-grow: 1;
+}
+
+
+/* scroll */
+
+/* // Example 1 */
+@keyframes scroll_1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-0.6em);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0.6em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6em;
+  height: 1em;
+  width: .4em;
+  margin-left: -.2em;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #fff;
+  animation: scroll_1 2.75s ease-in-out infinite;
+}
+
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: .25em solid #fff;
+  border-radius: 1em;
+}
+
+/* // Page style */
+body {
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+.page-wrap {
+  display: flex;
+  height: 100vh;
+}
+
+.example {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ayatpage */
+.ayatpage {
+  margin-top: -10px;
+}
+
+/* hal3 */
+
+.background {
+  position: relative;
+  height: 1700px;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1700px;
+  background: rgba(243, 0, 0, 0.486)url('./img/3.jpg') center/cover no-repeat;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  background-blend-mode: multiply;
+  /* Terapkan blend mode pada gambar latar belakang */
+  opacity: 0.4;
+  /* Opacity gambar */
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  /* Sesuaikan dengan posisi yang diinginkan */
+  z-index: 2;
+  /* Agar konten berada di atas gambar */
+  color: white;
+  /* Atur warna teks agar terlihat di atas latar belakang gelap */
+}
+
+
+.rounded-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30% 0 10% 0;
+  /* Nilai ini akan memberikan sudut oval pada bagian kanan atas */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.rounded-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* Tambahkan efek bayangan di sini */
+}
+
+.rounded-photo2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 30% 0 10%;
+  /* Nilai ini akan memberikan sudut oval pada bagian kanan atas */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.rounded-photo2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* Tambahkan efek bayangan di sini */
+}
+
+.rounded-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 8px solid white;
+  border-radius: 0 0 20px 0;
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+  color: white;
+}
+
+
+/* COUNTDOWN */
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.box-container {
+  display: flex;
+}
+
+.box {
+  margin: 0 10px;
+  width: 80%;
+  height: 80px;
+  background-color: #222;
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.days {
+  background-color: var(--primary-color);
+  ;
+}
+
+.hours {
+  background-color: var(--primary-color);
+  ;
+}
+
+.minutes {
+  background-color: var(--primary-color);
+}
+
+.seconds {
+  background-color: var(--primary-color);
+}
+
+.time {
+  font-family: standart;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.label {
+  font-family: standart;
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+/* COUNTDOWN */
+
+/* acara */
+
+.background2 {
+  margin: 0;
+  padding: 30px;
+  background-image: url('./img/coverr.jpg');
+  /* Ganti dengan path gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 100px 100px 0 0;
+  opacity: 0.8;
+}
+
+.background-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.486);
+  background-blend-mode: multiply;
+  /* Warna latar belakang transparan */
+}
+
+.blur-box {
+  width: 95%;
+  height: auto;
+  /* Sesuaikan lebar kotak sesuai kebutuhan */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  /* Warna latar belakang transparan */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Efek bayangan di bawah kotak */
+  backdrop-filter: blur(5px);
+  /* Efek blur pada kotak */
+  text-align: center;
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+  max-width: 90%;
+  height: 300px;
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+  border-radius: 20px; /* Opsional: Tambahkan border-radius untuk sudut yang lebih lembut */
+}
