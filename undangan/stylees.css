@@ -92,7 +92,7 @@
 
 /* modal */
 .covermodal {
-  background: rgba(0, 0, 0, 0.575) url('./img/2.jpg');
+  background: rgba(0, 0, 0, 0.575) url('./img/cov.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +132,7 @@
 
 /* cover */
 .cover {
-  background: rgba(0, 0, 0, 0.575) url('./img/coverr.jpg');
+  background: rgba(0, 0, 0, 0.575) url('./img/cov.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,7 +417,7 @@ h2 {
 .background2 {
   margin: 0;
   padding: 30px;
-  background-image: url('./img/coverr.jpg');
+  background-image: url('./img/cov.jpg');
   /* Ganti dengan path gambar latar belakang Anda */
   background-size: cover;
   background-position: center;
